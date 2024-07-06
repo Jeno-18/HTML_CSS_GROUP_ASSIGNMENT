@@ -140,6 +140,11 @@ footer {
 
 /*covid Care section*/
 
+.subheading {
+  padding: 1%;
+  margin-bottom: auto;
+}
+
 .covidcare{
   display: flex;
   justify-content: space-around; /* Distribute items evenly */
