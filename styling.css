@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+}
+
+#header {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  padding: 0.1px;
+  font-size: 15px;
+}
+
+footer {
+  position: relative;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 10;
+}
+
+.navbar {
+  margin: 0;
+  background-color: rgb(188, 182, 182);
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+.navbar li:hover {
+  background-color: rgb(134, 133, 133);
+}
+
+#drop1,
+#drop2 {
+  display: none;
+  background-color: white;
+  color: rgb(67, 67, 217);
+  top: 115px;
+  padding: 0;
+  width: auto;
+  max-width: 150px;
+  position: absolute;
+  z-index: 1;
+}
+
+#drop1 li,
+#drop2 li {
+  display: block;
+  margin: 0;
+  padding: 10px;
+}
+
+.navbar li:nth-child(2):hover #drop1,
+.navbar li:nth-child(3):hover #drop2 {
+  display: block;
+  background-color: rgb(214, 214, 214);
+}
+
+.image_section_1 img {
+  display: inline-block;
+
+}
+
+/*Image animation controls*/
+
+/* Carousel styles */
+.carousel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.carousel input {
+  display: none;
+}
+
+.carousel-item {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Show the image corresponding to the checked radio button */
+#item-1:checked~.carousel-item:nth-of-type(1),
+#item-2:checked~.carousel-item:nth-of-type(2),
+#item-3:checked~.carousel-item:nth-of-type(3),
+#item-4:checked~.carousel-item:nth-of-type(4),
+#item-5:checked~.carousel-item:nth-of-type(5) {
+  display: block;
+}
+
+/* Controls */
+.controls {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.controls label {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#item-1:checked~.controls .control-1,
+#item-2:checked~.controls .control-2,
+#item-3:checked~.controls .control-3,
+#item-4:checked~.controls .control-4,
+#item-5:checked~.controls .control-5 {
+  background-color: #333;
+}
+
+/*covid Care section*/
+
+.covidcare{
+  display: flex;
+  justify-content: space-around; /* Distribute items evenly */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  padding: 10px;
+}
+
+.cckit {
+  position: relative;
+  background-color: rgb(229, 222, 222);
+  height: 400px; /* Example height */
+  width: 350px; /* Example width */
+  border: 1px solid black; /* For visual reference */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.cctxt {
+  position: absolute;
+  top: 10px; /* Adjust top position */
+  left: 10px; /* Adjust left position */
+  margin: 0;
+  padding: 5px; /* Optional: adjust padding as needed */
+}
+
+.ccimg {
+  max-width: 100%;
+  height:fit-content; /* Maintain aspect ratio */
+  align-self: center;
+  position: relative; /* Ensure relative positioning */
+  top: -30px; /* Adjust top position to move it slightly above */
+}
+
+.subtext1 {
+  position: absolute;
+  top: 75%; /* Adjust top position */
+  left: 5px;
+  margin: 0;
+  color: rgb(0, 153, 255);
+}
+
+.subtext2 {
+  position: absolute;
+  top: 80%; /* Adjust top position */
+  left: 5px;
+  margin: 0;
+  color: rgb(0, 153, 255);
+}
+
+.a2c {
+  position: absolute;
+  bottom: 10px; /* Adjust bottom position */
+  width: calc(100% - 50px); /* Ensure the button spans the width minus padding */
+  border: 2px solid blue; /* Add blue borders */
+  border-radius: 10px; /* Round the borders */
+  padding: 10px;
+  background-color: rgb(158, 158, 196);
+  color: rgb(235, 225, 92);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dcimg {
+  max-width: 70%;
+  height:fit-content; /* Maintain aspect ratio */
+  align-self: center;
+  position: relative; /* Ensure relative positioning */
+  top: -30px; /* Adjust top position to move it slightly above */
+}
+
+.cckit .a2c:hover {
+background-color: white;
+}
